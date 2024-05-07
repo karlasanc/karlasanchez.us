@@ -1,0 +1,60 @@
+/* // PORTFOLIO PAGE */
+
+#portfolio img {
+	width: 280px;
+	height: 220px;
+	margin: 0 auto;
+}
+#portfolio figure {
+	margin: 1rem 0;
+	cursor: pointer;
+}
+#portfolio figcaption {
+	text-align: center;
+	padding: 1rem;
+}
+
+/*Medium Devices / Small Tablets*/
+@media screen and (min-width: 712px) {
+	main#portfolio {
+		border: 1px solid green; /*test*/
+		row-gap: 2rem;
+	}
+	#portfolio figure {
+		display: flex;
+		align-items: center;
+		column-gap: 2rem;
+	}
+	#portfolio img {
+		width: 280px;
+		height: 220px;
+	}
+	#portfolio figcaption {
+		text-align: left;
+	}
+}
+
+/*Medium Devices / Small Tablets*/
+@media screen and (min-width: 912px) {
+	main.portfolio {
+		border: 1px solid green; /*test*/
+		row-gap: 4rem;
+		align-content: start;
+	}
+	#portfolio section {
+		flex-direction: row;
+		flex-wrap: wrap;
+		column-gap: 2rem;
+	}
+	#portfolio figure {
+		flex: 1 20%;
+		flex-direction: column;
+	}
+	#portfolio img {
+		max-width: 100%;
+	}
+	#portfolio figcaption {
+		align-items: center;
+		text-align: center;
+	}
+}

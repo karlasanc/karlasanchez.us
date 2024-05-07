@@ -1,0 +1,46 @@
+/* || ABOUT PAGE */
+#skills.main-content {
+	text-align: center;
+	row-gap: 2rem;
+}
+#skills > * {
+	flex: 1 100%;
+}
+#skills ul {
+	margin-top: 1rem;
+}
+#skills aside {
+	margin: 2rem;
+}
+#skills i {
+	color: black;
+	font-size: 2.5rem; /*test*/
+}
+
+/*Medium Devices / Small Tablets*/
+@media screen and (min-width: 712px) {
+	#skills section.wrapper {
+	}
+	#skills i {
+		font-size: 4rem; /*test*/
+	}
+}
+
+/*Medium Devices / Small Tablets*/
+@media screen and (min-width: 912px) {
+	main#skills {
+		align-content: start;
+	}
+	#skills > section {
+		text-align: center;
+		flex-direction: column;
+	}
+	#skills div {
+		padding-bottom: 2rem;
+	}
+	#skills i {
+		font-size: 4rem; /*test*/
+		line-height: 0;
+		padding: 2rem;
+	}
+}

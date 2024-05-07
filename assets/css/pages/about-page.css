@@ -1,0 +1,53 @@
+/* || ABOUT PAGE */
+#about.main-content {
+	justify-content: space-around;
+	row-gap: 1rem;
+}
+#about p {
+	text-align: justify;
+}
+#about aside {
+	margin: 2rem 0;
+}
+.about-image-purple {
+	display: none;
+}
+/* Media Query: Large Mobile Devices*/
+@media screen and (min-width: 412px) {
+	#about.main-content {
+		padding: 0 0.5rem;
+	}
+	#about .wrapper {
+		row-gap: 2rem;
+	}
+}
+/*Medium Devices || Large Phones - Small Tablets*/
+@media screen and (min-width: 712px) {
+	#about.main-content {
+		max-width: 100%;
+	}
+	.about-image-blue {
+		display: none;
+	}
+	.about-image-purple {
+		display: unset;
+	}
+	#about article {
+		padding: 1rem;
+	}
+	#about .wrapper {
+		display: unset;
+	}
+	#about figure {
+		float: left;
+		max-width: 300px;
+		margin: 0 2rem 1rem 0;
+	}
+}
+
+/*X-Large Devices || Large Desktops*/
+@media screen and (min-width: 1024px) {
+	#about.main-content {
+		padding: 3rem;
+	}
+}

@@ -1,0 +1,161 @@
+/* || IMPORTED FONTS */
+@font-face {
+	font-family: "Love";
+	src: url("../font/Love.ttf") format("truetype");
+}
+@font-face {
+	font-family: "CaviarDreams";
+	src: url("../font/caviar_dreams/CaviarDreams.ttf") format("truetype");
+}
+@font-face {
+	font-family: "Comfortaa";
+	src: url("../font/comfortaa/Comfortaa-Regular.ttf") format("truetype");
+}
+
+/* || GENERAL TYPOGRAPHY */
+body {
+	font-family: "Comfortaa", serif;
+	font-style: normal;
+	font-weight: 400;
+	letter-spacing: 0.12rem;
+	font-size: 1.1rem;
+	line-height: 1.5;
+}
+h1 {
+	font-family: "CaviarDreams", serif;
+	font-size: 2.2rem;
+	font-weight: 700;
+	text-transform: capitalize;
+	letter-spacing: 0.01em;
+}
+h2 {
+	font-family: "Handlee", serif;
+	font-size: 1.5rem;
+	text-transform: uppercase;
+	color: #d16150;
+	text-shadow: 0 0 1px #d16150;
+}
+strong {
+	font-family: "Handlee", cursive, serif;
+	text-transform: uppercase;
+	letter-spacing: 0.1em;
+	font-weight: bold;
+}
+p {
+	text-indent: 1.9rem;
+}
+
+/* || FOOTER */
+#footer {
+	font-size: 0.9rem;
+	letter-spacing: -0.01em;
+	text-transform: capitalize;
+	line-height: 1.2;
+}
+#header {
+	font-size: inherit;
+}
+#header a.nav-link {
+	color: black;
+}
+/* || ICON SETTINGS */
+#header .fi-rr-apps {
+	display: flex;
+	color: black;
+	opacity: 0.7; /* Semi-transparent */
+	font-size: 3.5rem;
+}
+#header .fi-bs-home-heart,
+#header .fi-bs-following,
+#header .fi-bs-head-side-heart,
+#header .fi-bs-book-heart,
+#header .fi-bs-card-heart {
+	display: inline-flex;
+	color: black;
+	opacity: 0.7;
+	font-size: 1.5rem;
+}
+#footer .fi-ss-heart {
+	display: inline-flex;
+	color: #dd7564;
+}
+#footer .fi-brands-linkedin,
+#footer .fi-brands-github {
+	display: inline-flex;
+	color: black;
+	opacity: 0.7;
+	font-size: 3rem;
+	padding: 0.5rem;
+}
+
+/* || TYPOGRAPHY UTILITIES*/
+.logo {
+	color: black;
+	opacity: 0.7;
+	font-family: "Handlee", cursive, serif;
+	text-transform: uppercase;
+	letter-spacing: 0.5rem;
+	font-weight: 700;
+	font-size: 2.3rem;
+}
+.lead {
+	font-family: "Handlee", cursive, serif;
+	font-size: 1.8rem;
+	letter-spacing: 0.1em;
+	line-height: 2;
+}
+.underline {
+	text-decoration: underline;
+	text-decoration-color: #dd7564;
+	text-decoration-thickness: 0.2rem;
+	text-underline-offset: 0.27rem;
+}
+
+/* Media Query: Large Mobile Devices*/
+@media screen and (min-width: 412px) {
+	#footer {
+		font-size: 1rem;
+		letter-spacing: 0.02rem;
+	}
+	h1 {
+		font-size: 3.1rem;
+		letter-spacing: 0.01em;
+	}
+	.lead {
+		font-size: 2rem;
+	}
+	h2 {
+		font-size: 1.9rem;
+	}
+}
+
+/*Medium Devices || Large Phones - Small Tablets*/
+@media screen and (min-width: 712px) {
+	body {
+		font-size: 1.2rem;
+	}
+	#footer .fi-brands-linkedin,
+	#footer .fi-brands-github {
+		font-size: 3rem;
+	}
+	.lead {
+		font-size: 2.2rem;
+	}
+}
+
+/*Large Devices || Large Tablets - Desktops*/
+@media screen and (min-width: 912px) {
+	#header .fi-bs-home-heart,
+	#header .fi-bs-following,
+	#header .fi-bs-head-side-heart,
+	#header .fi-bs-book-heart,
+	#header .fi-bs-card-heart {
+		font-size: 1.8rem;
+	}
+	.logo {
+		font-size: 2.5rem;
+	}
+	.lead {
+		font-size: 2.4rem;
+	}
+}
