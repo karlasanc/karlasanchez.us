@@ -1,11 +1,13 @@
 # Software Developer Porfolio
+- Name: karlasanchez.us
+- Date created:
+- Email: karlaonrails@gmail.com
+- Purpose: Professional Portfolio
 
-## Contact
-
-Karla Sanchez
-
-karlaonrails@gmail.com
-
-karlasanchez.us
-
-
+# Include Projects
+- Dice Roll Application
+- Food Ordering Database
+- Employee Management System
+- Boulders Notflix
+- Pixel Positions
+- Class Registration System
