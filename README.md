@@ -1,9 +1,11 @@
-- Karla Sanchez
+# Software Developer Porfolio
 
-- Personal Portfolio
+## Contact
 
-- karlasanchez.us
+Karla Sanchez
 
-- karlaonrails@gmail.com
+karlaonrails@gmail.com
+
+karlasanchez.us
 
 
