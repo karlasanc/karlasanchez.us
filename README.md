@@ -92,6 +92,8 @@ for the following:
 - [![Bootstrap][Bootstrap.com]][Bootstrap-url]
 - Next.js
 - Tailwind CSS
+- react-type-animation
+  [dependency: npm package]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
