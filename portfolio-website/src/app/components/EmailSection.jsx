@@ -1,10 +1,45 @@
-import React from "react";
+"use client";
+import React, { useState } from "react";
 import GithubIcon from "../../../public/github-icon.svg";
 import LinkedinIcon from "../../../public/linkedin-icon.svg";
 import Link from "next/link";
 import Image from "next/image";
 
 const EmailSection = () => {
+  // track whether message was sent for user
+  const [emailSubmitted, setEmailSubmitted] = useState(false);
+
+  // async function to handle form submissions
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    const data = {
+      email: e.target.email.value,
+      subject: e.target.subject.value,
+      message: e.target.message.value,
+    };
+
+    const JSONdata = JSON.stringify(data);
+    const endpoint = "/api/send";
+
+    // request for sending data to the server
+    const options = {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSONdata,
+    };
+
+    //submit data & return response
+    const response = await fetch(endpoint, options);
+    const resData = await response.json();
+
+    if (response.status === 200) {
+      console.log("Message sent.");
+      setEmailSubmitted(true); //set state status
+    }
+  };
+
   return (
     <section className="grid md:grid-cols-2 my-12 md:my-12 py-24 gap-4 relative">
       {/* Paint splat image */}
@@ -32,13 +67,14 @@ const EmailSection = () => {
 
       {/* right column */}
       <div className="relative z-10">
-        <form className="flex flex-col">
+        <form className="flex flex-col" onSubmit={handleSubmit}>
           {/* Email input */}
           <div className="mb-6">
             <label htmlFor="email" className="text-white mb-2 block text-sm font-medium">
               Your email
             </label>
             <input
+              name="email"
               id="email"
               type="email"
               className="z-10 bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
@@ -53,6 +89,7 @@ const EmailSection = () => {
               Subject
             </label>
             <input
+              name="subject"
               id="subject"
               type="text"
               className="bg-[#18191E] border border-[#33353F] placeholder-[#9CA2A9] text-gray-100 text-sm rounded-lg block w-full p-2.5"
@@ -82,6 +119,8 @@ const EmailSection = () => {
             >
               Send Message
             </button>
+            {/* message successful */}
+            {emailSubmitted && <p className="text-green-500 text-sm mt-2">Email sent successfully!</p>}
           </div>
         </form>
       </div>
