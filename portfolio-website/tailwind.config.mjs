@@ -8,9 +8,13 @@ module.exports = {
   ],
   theme: {
     extend: {
-      backgroundImage: {
-        "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
-        "gradient-conic": "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
+      fontFamily: {
+        gabriela: ["var(--font-gabriela)", "script"],
+        rumRaisin: ["var(--font-rum-raisin)", "cursive"],
+        caveatBrush: ["var(--font-caveat-brush)", "cursive"],
+        montserrat: ["var(--font-montserrat)", "sans-serif"],
+        geistSans: ["var(--font-geist-sans)", "sans-serif"],
+        geistMono: ["var(--font-geist-mono)", "monospace"],
       },
     },
     colors: {

@@ -84,6 +84,8 @@ for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_u
 - Tailwind CSS
 - react-type-animation [dependency: npm package]
 - heroicons [menu bar dependency: npm package]
+- react-animated-numbers [npm package]: Animate Achievement Numbers
+- framer-motion
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
