@@ -9,18 +9,20 @@ const projectsData = [
   {
     id: 1,
     title: "Class Registration System",
-    description: "Project 1 description",
+    description:
+      "A web application that enhancing system usability for students and admins by incorporating authentication, search, and waitlist functionality.",
     image: "/images/projects/1.png",
-    tag: ["All", "Web"],
+    tag: ["All", "PHP"],
     gitUrl: "/",
     previewUrl: "/",
   },
   {
     id: 2,
     title: "Pixel Positions",
-    description: "Project 2 description",
+    description:
+      "Job posting board that enabling employers to post job offers and users to filter listings, improving user search efficiency.",
     image: "/images/projects/2.png",
-    tag: ["All", "Web"],
+    tag: ["All", "PHP"],
     gitUrl: "/",
     previewUrl: "/",
   },
@@ -29,36 +31,36 @@ const projectsData = [
     title: "Boulders Notflix",
     description: "Project 3 description",
     image: "/images/projects/3.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
+    tag: ["All", "JavaScript"],
+    gitUrl: "https://github.com/karlasanc/team-boulders-notlify",
     previewUrl: "/",
   },
   {
     id: 4,
     title: "Food Ordering Database",
-    description: "Project 4 description",
-    image: "/images/projects/4.png",
-    tag: ["All", "Mobile"],
-    gitUrl: "/",
-    previewUrl: "/",
+    description: "Relational database to facilitate online food ordering.",
+    image: "/images/projects/food.png",
+    tag: ["All", "Database"],
+    gitUrl: "/https://github.com/karlasanc/Online-Ordering-Database/blob/master/README.md",
+    previewUrl: "https://go.screenpal.com/watch/cr1qlxV1onq",
   },
   {
     id: 5,
     title: "Dice Roll Application",
-    description: "Authentication and CRUD operations",
-    image: "/images/projects/5.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    description: "Website application that simulates the roll of dice using JavaScript listeners and DOM manipulation.",
+    image: "/images/projects/diceroll.png",
+    tag: ["All", "JavaScript"],
+    gitUrl: "/https://github.com/karlasanc/Online-Ordering-Database/blob/master/README.md",
+    previewUrl: "https://diceroll-karla.netlify.app/",
   },
   {
     id: 6,
-    title: "Employee Management Application",
-    description: "Project 5 description",
-    image: "/images/projects/6.png",
-    tag: ["All", "Web"],
-    gitUrl: "/",
-    previewUrl: "/",
+    title: "Employee Management",
+    description: "A command-line interface application for managing employee information. ",
+    image: "/images/projects/ems.png",
+    tag: ["All", "Python"],
+    gitUrl: "https://github.com/karlasanc/employee-management-system/blob/main/README.md",
+    previewUrl: "https://go.screenpal.com/watch/cZfTcvVMbWQ",
   },
 ];
 
@@ -89,10 +91,12 @@ const ProjectsSection = () => {
       <h2 className="font-gabriela text-center text-6xl text-orange-600 mt-4 mb-2 md:mb-4">My Projects</h2>
 
       {/* tag filtering options */}
-      <div className="text-white flex flex-row justify-center items-center gap-2 py-6 mb-4">
+      <div className="text-white flex flex-row flex-wrap justify-center items-center gap-2 py-6 mb-4">
         <ProjectTag onClick={handleTagChange} name="All" isSelected={tag === "All"} />
-        <ProjectTag onClick={handleTagChange} name="Web" isSelected={tag === "Web"} />
-        <ProjectTag onClick={handleTagChange} name="Mobile" isSelected={tag === "Mobile"} />
+        <ProjectTag onClick={handleTagChange} name="JavaScript" isSelected={tag === "JavaScript"} />
+        <ProjectTag onClick={handleTagChange} name="PHP" isSelected={tag === "PHP"} />
+        <ProjectTag onClick={handleTagChange} name="Python" isSelected={tag === "Python"} />
+        <ProjectTag onClick={handleTagChange} name="Database" isSelected={tag === "Database"} />
       </div>
 
       {/* project card setup */}
