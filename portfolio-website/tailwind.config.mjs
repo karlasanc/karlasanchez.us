@@ -9,18 +9,20 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        gabriela: ["var(--font-gabriela)", "script"],
-        rumRaisin: ["var(--font-rum-raisin)", "cursive"],
-        caveatBrush: ["var(--font-caveat-brush)", "cursive"],
         montserrat: ["var(--font-montserrat)", "sans-serif"],
-        geistSans: ["var(--font-geist-sans)", "sans-serif"],
-        geistMono: ["var(--font-geist-mono)", "monospace"],
+        gabriela: ["var(--font-gabriela)", "script"],
+        caveatBrush: ["var(--font-caveat-brush)", "cursive"],
+        rumRaisin: ["var(--font-rum-raisin)", "cursive"],
       },
     },
     colors: {
       ...colors,
       primary: colors.yellow,
       secondary: colors.orange,
+      tertiary: "#F05941",
+      bgPrimaryBlue: "#0B2839",
+      bgSecondaryBlue: "#09324A",
+      bgSecondaryBlack: "#18191E",
     },
   },
   plugins: [],

@@ -16,42 +16,45 @@ const HeroSection = () => {
           transition={{ duration: 0.5 }}
           className="col-span-8 place-self-center text-center sm:text-left justify-self-start"
         >
-          <h1 className="text-white mb-4 text-6xl lg:text-8xl lg:leading-normal font-extrabold">
-            <span className="text-transparent bg-clip-text bg-gradient-to-r from-primary-400 to-secondary-600 font-rumRaisin">
+          <h1 className="text-stone-200 mb-10 text-6xl md:text-8xl">
+            <span className="font-gabriela tracking-wider leading-8 md:tracking-wide font-extrabold text-orange-600">
               Hi, I'm{" "}
             </span>
             {/* Job Title Animation */}
             <TypeAnimation
-              className="font-caveatBrush"
+              className="font-caveatBrush tracking-wider inline-block"
               sequence={[
                 "Karla",
-                3000, // wait 1s before replacing "Mice" with "Hamsters"
-                "Web Developer",
-                3000, // wait 1s before replacing "Mice" with "Hamsters"
-                "Database Designer",
-                3000,
-                "Software Engineer",
-                3000,
+                3500,
+                "A Web Developer",
+                3500,
+                "A Database Designer",
+                3500,
+                "A Software Engineer",
+                3500,
               ]}
               wrapper="span"
               speed={70}
-              style={{
-                display: "inline-block",
-              }}
               repeat={Infinity}
             />
           </h1>
 
-          <p className="text-[#ADB7BE] text-base sm:text-lg mb-6 lg:text-xl">
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
-          </p>
+          {/* header buttons */}
 
           <div>
-            <button className="px-6 py-3 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-200 text-white">
-              Hire Me
+            <button className="px-1 py-1 w-full sm:w-fit rounded-full mr-4 bg-gradient-to-br from-red-600 via-orange-500 to-yellow-300 hover:bg-bgPrimaryBlue text-stone-200 mt-3">
+              <a href="#contact" className="block hover:bg-orange-600 rounded-full px-5 py-2">
+                Contact Me
+              </a>
             </button>
-            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-blue-500 via-primary-500 to-secondary-500 hover:bg-slate-800 text-white mt-3">
-              <span className="block bg-[#121212] hover:bg-slate-800 rounded-full px-5 py-2">Download CV</span>
+            <button className="px-1 py-1 w-full sm:w-fit rounded-full bg-gradient-to-br from-red-600 via-orange-500 to-yellow-300 hover:bg-bgPrimaryBlue text-stone-200 mt-3">
+              <a
+                href="https://flowcv.com/resume/5rjvp5u3at"
+                className="block bg-bgSecondaryBlue hover:bg-orange-600 rounded-full px-5 py-2"
+                target="_blank"
+              >
+                Download CV
+              </a>
             </button>
           </div>
         </motion.div>
@@ -60,13 +63,13 @@ const HeroSection = () => {
           initial={{ opacity: 0, scale: 0.5 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.5 }}
-          className="col-span-4 place-self-center mt-4 lg:mt-0"
+          className="col-span-4 place-self-center mt-8 lg:mt-0"
         >
-          <div className="rounded-full bg-[#181818] w-[250px] h-[250px] lg:w-[400px] lg:h-[400px] relative">
+          <div className="rounded-full bg-[#0B2839] w-[275px] h-[275px] lg:w-[400px] lg:h-[400px] relative">
             <Image
-              src="/images/hero-image.png"
+              src="/images/hero-image-blue.jpeg"
               alt="hero image"
-              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2"
+              className="absolute transform -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2 w-[225px] h-[225px] md:w-[300px] md:h-[300px] lg:w-[400px] lg:h-[400px] rounded-full object-center"
               width={300}
               height={300}
             />

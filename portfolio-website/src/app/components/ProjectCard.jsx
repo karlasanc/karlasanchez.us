@@ -11,27 +11,27 @@ const ProjectCard = ({ imgUrl, title, description, gitUrl, previewUrl }) => {
         style={{ background: `url(${imgUrl})`, backgroundSize: "cover" }}
       >
         {/* image overlay when hovering over image */}
-        <div className="overlay absolute top-0 left-0 w-full h-full bg-[#181818] bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 translate-all duration-500 items-center justify-center">
+        <div className="overlay absolute top-0 left-0 w-full h-full bg-bgSecondaryBlue bg-opacity-0 hidden group-hover:flex group-hover:bg-opacity-80 translate-all duration-500 items-center justify-center">
           {/* Bracket Icon Link for Github Repo */}
           <Link
             href={gitUrl}
-            className="h-14 w-14 mr-2 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
+            className="h-14 w-14 mr-2 border-2 relative rounded-full border-yellow-500 hover:border-white group/link"
           >
-            <CodeBracketIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:hover:text-white" />
+            <CodeBracketIcon className="h-10 w-10 text-yellow-500 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:hover:text-white" />
           </Link>
 
           {/* Eye Icon Link for Demo */}
           <Link
             href={previewUrl}
-            className="h-14 w-14 border-2 relative rounded-full border-[#ADB7BE] hover:border-white group/link"
+            className="h-14 w-14 border-2 relative rounded-full border-yellow-500 hover:border-white group/link"
           >
-            <EyeIcon className="h-10 w-10 text-[#ADB7BE] absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:hover:text-white" />
+            <EyeIcon className="h-10 w-10 text-yellow-500 absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 cursor-pointer group-hover/link:hover:text-white" />
           </Link>
         </div>
       </div>
-      <div className="text-white rounded-b-xl bg-[#181818] py-6 px-4">
-        <h5 className="text-xl font-semibold mb-2">{title}</h5>
-        <p className="text-[#ADB7BE]">{description}</p>
+      <div className="text-white rounded-b-xl bg-bgSecondaryBlue py-6 px-4">
+        <h5 className="text-white text-xl font-semibold mb-2">{title}</h5>
+        <p className="text-stone-200">{description}</p>
       </div>
     </div>
   );
