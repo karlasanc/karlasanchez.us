@@ -6,26 +6,25 @@ import TabButton from "./TabButton";
 // tab content
 const TAB_DATA = [
   {
-    title: "Skills",
+    title: "skills",
     id: "skills",
     content: (
       <ul className="list-disc pl-2">
-        <li>Node.js</li>
-        <li>Express.js</li>
-        <li>MySQL</li>
-        <li>Knex</li>
-        <li>Javascript</li>
-        <li>React</li>
+        <li>PHP/Laravel</li>
+        <li>Javascript/React</li>
+        <li>SQL</li>
+        <li>HTML/CSS</li>
+        <li>TailwindCSS</li>
       </ul>
     ),
   },
   {
-    title: "Education",
+    title: "education",
     id: "education",
     content: (
       <ul className="list-disc pl-2">
         <li>University of Arizona Global Campus</li>
-        <li>Bachelor's of Science in Computer Software Technology</li>
+        <li>Bachelor's Degree in Computer Science</li>
       </ul>
     ),
   },
@@ -34,19 +33,17 @@ const TAB_DATA = [
     id: "experience",
     content: (
       <ul className="list-disc pl-2">
-        <li>Insurance Professional, USAA</li>
-        <li>Technical Support Specialist, Pearson Clinical</li>
+        <li>USAA, Insurance Professional, 2017-2024</li>
+        <li>Pearson Clinical, Technical Support, 2013-2017</li>
       </ul>
     ),
   },
 ];
 
 const AboutSection = () => {
-  // Tab-Stated to determine which tab is open
-  const [tab, setTab] = useState("skills");
+  const [tab, setTab] = useState("skills"); // keeps track of tab state
+  const [isPending, startTransition] = useTransition(); // handles tab transition & state
 
-  // Tab-Transition that handles & updates tab transition & state
-  const [isPending, startTransition] = useTransition();
   const handleTabChange = (id) => {
     startTransition(() => {
       setTab(id);
@@ -54,18 +51,32 @@ const AboutSection = () => {
   };
 
   return (
-    <section className="text-white">
-      <div className="md:grid md:grid-cols-2 gap-8 items-center py-8 px-4 xl:gap-16 sm:py-16 xl:px-16">
-        <Image src="/images/about-image.png" width={500} height={500} alt="about-me image" />
-        <div className="mt-4 md:mt-0 text-left flex flex-col h-full">
-          <h2 className="text-4xl font-bold  text-white mb-4">About Me</h2>
-          <p className="text-base lg:text-lg">
-            I am a full stack web developer with a passion for creating interactive and responsive web applications. I
-            have experience working with JavaScript, React, Redux, Node.js, Express, PostgreSQL, Sequelize, HTML, CSS,
-            and Git. I am a quick learner and I am always looking to expand my knowledge and skill set. I am a team
-            player and I am excited to work with others to create amazing applications.
-          </p>
+    <section id="about" className="text-slate-200 my-8 md:my-12">
+      <div className="md:grid md:grid-cols-6 gap-6 py-8 px-4 sm:py-16 xl:px-16">
+        <div className="md:col-span-4 col-start-2">
+          <h2 className="text-5xl md:text-6xl text-orange-600 mb-6 font-gabriela">About Me</h2>
+        </div>
 
+        <div className="text-left flex flex-col md:col-span-4 md:col-start-1 h-full lg:mr-6">
+          <p className="text-base mb-4 lg:text-lg">
+            I am a full stack web developer with a passion for building scalable, responsive web applications. With
+            experience in JavaScript, React, Node.js, Express, Knex, Php, Laravel, HTML, CSS, and Git, I am skilled at
+            creating seamless user experiences and robust back-end solutions. As a fast learner, I am always eager to
+            expand my knowledge and stay on top of the latest trends and technologies. I bring fresh ideas, a growth
+            mindset, and a commitment to making a meaningful impact through my work.
+          </p>
+          <p className="text-base mb-8 lg:text-lg">
+            I’m excited about contributing to innovative projects that challenge the status quo and push boundaries. I
+            thrive in dynamic environments where analytical thinking, creativity, and collaboration are key. My
+            background in insurance and technical support has given me a deep understanding of how internal systems can
+            be optimized, and it fueled my passion for helping developers improve processes and workflows. Ultimately,
+            my goal is to be part of a team that creates impactful products and designs user experiences that are not
+            only functional but also intuitive and enjoyable.
+          </p>
+        </div>
+
+        <div className="md:col-span-2 md:start-5">
+          <Image src="/images/about-image.jpeg" width={400} height={400} alt="about-me image" />
           {/* tab buttons */}
           <div className="flex flex-row mt-8">
             <TabButton selectTab={() => handleTabChange("skills")} active={tab === "skills"}>
@@ -81,7 +92,6 @@ const AboutSection = () => {
               Experience{" "}
             </TabButton>
           </div>
-
           {/* displays tab data */}
           <div className="mt-8">{TAB_DATA.find((t) => t.id === tab).content}</div>
         </div>
