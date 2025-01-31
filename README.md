@@ -62,26 +62,30 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-This is a personal portfolio website built with Next.js to showcase all the web applications and projects I've developed. The app serves as a centralized platform where potential collaborators, employers, or anyone interested can explore my work across different technologies.
+This is a personal portfolio website built with Next.js to showcase all the web applications and projects I’ve developed. The app serves as a centralized platform for potential collaborators, employers, or anyone interested in exploring my work across different technologies. Below are some key features and technical highlights:
+
 
 Key features:
-* Project Gallery: Displaying a collection of my personal and professional web projects.
-* Interactive Demos: Links to live demos of each project, including both frontend and backend showcases.
-* Responsive Design: A sleek, mobile-friendly interface for smooth navigation across all devices.
+* Project Gallery: A collection of my personal and professional web projects, with links to live demos and GitHub repositories.
+* Interactive Demos: Live links to demos of each project, showcasing both frontend and backend implementations.
+* Responsive Design: A fully responsive UI built with Tailwind CSS, ensuring seamless navigation on desktop, tablet, and mobile devices.
 
-The application is deployed on Netlify, ensuring fast and reliable performance, while my Laravel-based projects are hosted on SiteGround for a seamless integration of both front-end and back-end demos.
+Technical Highlights:
+* Next.js Static Site Generation (SSG): Used SSG to pre-render the project gallery pages, improving load times and SEO. This ensures that static pages are generated at build time, enhancing performance.
+* API Routes: Leveraged Next.js API routes to handle form submissions, contact page interactions, and dynamic data fetching without needing a separate backend.
+* Image Optimization: Utilized Next.js's built-in <Image /> component to optimize images automatically for faster loading times and reduced page size.
+* Automatic Static Optimization: Next.js automatically optimizes pages that don't have server-side data requirements, ensuring the best performance for pages without dynamic content.
+* Custom Document and Head Configuration: Customized the _document.js and _app.js files to improve the overall performance and add meta tags for better SEO and social sharing.
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
+Deployment:
+* Netlify: The app is deployed on Netlify, providing fast, global delivery of static assets and automatic builds with each new commit.
+* SiteGround: My Laravel-based backend projects are hosted on SiteGround, where they integrate seamlessly with the Next.js frontend to showcase full-stack applications.
 
 ### Built With
 
-This section should list any major frameworks/libraries used to bootstrap your project. Leave any add-ons/plugins for the acknowledgements section. Here are a few examples.
 * React
 * Next
 * Tailwind CSS
-* Npm
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -168,13 +172,17 @@ Project Domain Link: [karlasanchez.us](https://karlasanchez.us)
 Use this space to list resources you find helpful and would like to give credit to. I've included a few of my favorites to kick things off!
 
 * [Webdecoded Youtube NextJs Portfolio Tutorial](https://www.youtube.com/watch?v=Kb1f5bvF6f4)
+* [Heroicons](https://heroicons.com/)
+* [react-type-animation](https://www.npmjs.com/package/react-type-animation)
 * [Choose an Open Source License](https://choosealicense.com)
 * [GitHub Emoji Cheat Sheet](https://www.webpagefx.com/tools/emoji-cheat-sheet)
 * [Malven's Flexbox Cheatsheet](https://flexbox.malven.co/)
 * [Malven's Grid Cheatsheet](https://grid.malven.co/)
-* [Img Shields](https://shields.io)
 * [GitHub Pages](https://pages.github.com)
+* [Google Fonts](https://fonts.google.com/)
 * [Font Awesome](https://fontawesome.com)
+* [Heroicons](https://heroicons.com/)
+* [react-type-animation](https://www.npmjs.com/package/react-type-animation)
 * [React Icons](https://react-icons.github.io/react-icons/search)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
