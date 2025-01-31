@@ -77,10 +77,6 @@ Technical Highlights:
 * Automatic Static Optimization: Next.js automatically optimizes pages that don't have server-side data requirements, ensuring the best performance for pages without dynamic content.
 * Custom Document and Head Configuration: Customized the _document.js and _app.js files to improve the overall performance and add meta tags for better SEO and social sharing.
 
-Deployment:
-* Netlify: The app is deployed on Netlify, providing fast, global delivery of static assets and automatic builds with each new commit.
-* SiteGround: My Laravel-based backend projects are hosted on SiteGround, where they integrate seamlessly with the Next.js frontend to showcase full-stack applications.
-
 ### Built With
 
 * React
